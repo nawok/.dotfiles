@@ -1,4 +1,4 @@
-require('core.plugin_config.nvim-tree.keymap')
+require('core.plugin_config.nvim-tree.keymaps')
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -33,7 +33,7 @@ require('nvim-tree').setup {
     }
   },
   --auto_close = true,
-  on_attach = on_attach, -- keymap.lua
+  on_attach = on_attach, -- keymaps.lua
   open_on_tab = false,
   update_focused_file = {
     enable = true
