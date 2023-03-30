@@ -6,6 +6,7 @@ alias npm-ls="find . -name 'node_modules' -type d -prune -print | xargs du -chs"
 alias npm-rm="find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;"
 alias git-create="git init && git commit -m 'Initial commit' --allow-empty && git remote add origin"
 
+# nvim
 alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -R"
