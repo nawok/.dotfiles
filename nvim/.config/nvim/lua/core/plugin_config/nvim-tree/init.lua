@@ -1,7 +1,7 @@
+require('core.plugin_config.nvim-tree.keymap')
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-
-vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', {noremap = true})
 
 local function open_nvim_tree(data)
   local no_name = data.file == "" and vim.bo[data.buf].buftype == ""
@@ -33,7 +33,8 @@ require('nvim-tree').setup {
     }
   },
   --auto_close = true,
-  --opens_on_tab = false,
+  on_attach = on_attach, -- keymap.lua
+  open_on_tab = false,
   update_focused_file = {
     enable = true
   },
@@ -88,4 +89,3 @@ require('nvim-tree').setup {
   },
   --lsp_diagnostics = true
 }
-
