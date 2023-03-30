@@ -32,8 +32,8 @@ require('nvim-tree').setup {
       }
     }
   },
-  auto_close = true,
-  opens_on_tab = false,
+  --auto_close = true,
+  --opens_on_tab = false,
   update_focused_file = {
     enable = true
   },
